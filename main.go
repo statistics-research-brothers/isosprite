@@ -26,7 +26,7 @@ func main() {
 	switch args[0] {
 	case "create":
 		if len(args) != 3 {
-			fmt.Println("usage: isoforge create <source_folder> <output.iso>")
+			fmt.Println("usage: isosprite create <source_folder> <output.iso>")
 			os.Exit(1)
 		}
 		if err := CreateISO(args[1], args[2]); err != nil {
@@ -35,7 +35,7 @@ func main() {
 		}
 	case "extract":
 		if len(args) != 3 {
-			fmt.Println("usage: isoforge extract <input.iso> <output_folder>")
+			fmt.Println("usage: isosprite extract <input.iso> <output_folder>")
 			os.Exit(1)
 		}
 		if err := ExtractISO(args[1], args[2]); err != nil {
